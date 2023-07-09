@@ -45,10 +45,25 @@ namespace GMTKingsQueensJam2023
             iceToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Ice, isOn));
             fireToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Fire, isOn));
             sliceToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Slice, isOn));
-            richToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Magic, isOn));
-            magicToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Fly, isOn));
-            flyToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Superstrenght, isOn));
-            strongToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Rich, isOn));
+            richToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Rich, isOn));
+            magicToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Magic, isOn));
+            flyToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Fly, isOn));
+            strongToggle.onValueChanged.AddListener((bool isOn) => ToggleParameter(SuperParameter.Superstrenght, isOn));
+        }
+
+        public List<SuperParameter> GetActiveParameters()
+        {
+            var result = new List<SuperParameter>();
+
+            foreach (var (parameter, isChecked) in parametersState)
+            {
+                if (isChecked)
+                {
+                    result.Add(parameter);
+                }
+            }
+
+            return result;
         }
 
         private void ToggleParameter(SuperParameter param, bool isOn)

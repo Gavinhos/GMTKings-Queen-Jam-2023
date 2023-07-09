@@ -11,12 +11,18 @@ namespace GMTKingsQueensJam2023
         [SerializeField] private Button closeButton;
 
         [SerializeField] private ParametersControllerGraphics parametersController;
+        [SerializeField] private SuspectsControllerGraphics suspectsController;
 
         private bool isOpen;
 
         private void Awake()
         {
             closeButton.onClick.AddListener(Close);
+        }
+
+        private void Start()
+        {
+            suspectsController.Setup(parametersController);
         }
         
         public void CustomOnMouseEnter()
