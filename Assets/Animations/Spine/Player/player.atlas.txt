@@ -1,0 +1,102 @@
+player.png
+	size: 512, 512
+	filter: Linear, Linear
+	pma: true
+	scale: 0.77
+L_arm_1
+	bounds: 379, 7, 112, 109
+L_eye
+	bounds: 294, 2, 32, 64
+L_eye2
+	bounds: 481, 405, 42, 22
+	rotate: 90
+L_eyebrow
+	bounds: 328, 16, 43, 50
+L_hand_1
+	bounds: 220, 5, 61, 72
+	rotate: 90
+R_ear
+	bounds: 2, 21, 45, 119
+	rotate: 90
+R_eye
+	bounds: 450, 307, 30, 59
+R_eye2
+	bounds: 450, 182, 34, 25
+	rotate: 90
+R_eyebrow
+	bounds: 450, 259, 46, 45
+	rotate: 90
+R_hand_1
+	bounds: 450, 449, 55, 61
+bag
+	bounds: 2, 68, 375, 442
+mouth_2
+	bounds: 450, 218, 32, 39
+mouth_3
+	bounds: 450, 368, 79, 29
+	rotate: 90
+nose
+	bounds: 123, 5, 61, 95
+	rotate: 90
+shadow
+	bounds: 379, 118, 392, 69
+	rotate: 90
+
+player_2.png
+	size: 512, 512
+	filter: Linear, Linear
+	pma: true
+	scale: 0.77
+flag
+	bounds: 2, 22, 291, 244
+head
+	bounds: 295, 10, 199, 256
+mat
+	bounds: 2, 268, 444, 226
+
+player_3.png
+	size: 512, 512
+	filter: Linear, Linear
+	pma: true
+	scale: 0.77
+R_arm_1
+	bounds: 389, 129, 116, 101
+	rotate: 90
+R_leg
+	bounds: 246, 61, 65, 133
+	rotate: 90
+body
+	bounds: 266, 327, 186, 183
+coke
+	bounds: 130, 267, 134, 243
+dice
+	bounds: 246, 128, 141, 117
+flagpole
+	bounds: 2, 194, 126, 316
+hat
+	bounds: 135, 18, 93, 69
+ioio
+	bounds: 266, 247, 78, 203
+	rotate: 90
+mouth_1
+	bounds: 381, 52, 129, 74
+	offsets: 0, 1, 129, 75
+pan
+	bounds: 135, 89, 176, 109
+	rotate: 90
+strap copy
+	bounds: 2, 28, 164, 131
+	rotate: 90
+strap
+	bounds: 2, 28, 164, 131
+	rotate: 90
+
+player_4.png
+	size: 256, 256
+	filter: Linear, Linear
+	pma: true
+	scale: 0.77
+L_ear
+	bounds: 77, 69, 98, 106
+L_leg
+	bounds: 2, 43, 73, 132
